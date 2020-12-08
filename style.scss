@@ -16,4 +16,14 @@ section {
     align-items: center;
     min-height: 100vh;
     background: #110026;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -40%;
+        left: 70%;
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(#4285F4, #53C3C3);
+        border-radius: 50%;
+    }
 }
