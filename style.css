@@ -64,6 +64,9 @@ section::before {
           transform-style: preserve-3d;
   -webkit-transition: 1s;
   transition: 1s;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .card .front::before {
@@ -207,5 +210,20 @@ section::before {
   font-size: 10px;
   line-height: 1.4em;
   font-weight: 300;
+}
+
+.card:hover .face.front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .face.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:hover .face.back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 /*# sourceMappingURL=style.css.map */
